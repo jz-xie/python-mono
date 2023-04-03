@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "sample"
+version = "0.1.0"
+description = ""
+authors = ["jz"]
+readme = "README.md"
+packages = [{include = "sample", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+my_utils = { git = "git@github.com:jz-xie/python-mono.git", subdirectory = "lib/my_utils", branch = "main", tag = "my_utils==2023.3.1"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
