@@ -1,0 +1,15 @@
+NOTICE
+
+This project includes code from the following open source repository:
+
+terraform-aws-eks-blueprints
+https://github.com/aws-ia/terraform-aws-eks-blueprints
+Licensed under the Apache License, Version 2.0 (the "License").
+
+Modifications:
+- Added new resource "example_resource"
+- Modified "existing_resource" to support additional parameters
+
+This project may contain other third-party software subject to separate license terms. Those terms will also apply to the use of that software.
+
+This NOTICE file is provided to ensure compliance with the License's attribution requirements. If applicable, please include this file, along with any required notices, in any redistribution or use of the included code or other third-party software.
