@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "my-utils-cli"
+version = "0.1.0"
+description = ""
+authors = ["jz"]
+readme = "README.md"
+packages = [{include = "my_utils_cli", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.9, <3.10"
+my_utils = { git = "git@github.com:jz-xie/python-mono.git", subdirectory = "lib/my_utils", branch = "main"}
+mypy-boto3-sts = "^1.27.0"
+mypy-boto3-cur = "^1.27.0"
+inquirer = "^3.1.3"
+selenium-wire = "^5.1.0"
+defusedxml = "^0.7.1"
+prefect = "^2.10.20"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+my-utils-cli = "my_utils_cli.cli:app"
